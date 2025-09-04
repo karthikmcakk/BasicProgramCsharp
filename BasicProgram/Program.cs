@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
+using BasicProgram.Models;
 using System;
 namespace BasicPrgramApp
 {
@@ -23,6 +24,19 @@ namespace BasicPrgramApp
             int b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Add : {a + b}");
             Console.WriteLine($"Multiply : {a * b}");
+
+
+            Console.WriteLine("");
+            Person person = new Person();
+
+            Console.WriteLine("Enter the Name:");
+            person.Name = Console.ReadLine();
+            Console.WriteLine("Enter the Age:");
+            person.Age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Name is {person.Name}");
+            Console.WriteLine($"Age is {person.Age}");
+
         }
     }
 }
